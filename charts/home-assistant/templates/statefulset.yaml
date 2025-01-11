@@ -87,6 +87,7 @@ spec:
           volumeMounts:
           - mountPath: /config
             name: {{ include "home-assistant.fullname" . }}
+            subPath: {{ .Values.persistence.subPath }}  << enable Subpaths
           {{- if .Values.additionalMounts }}
             {{- .Values.additionalMounts | toYaml | nindent 10 }}
           {{- end }}
