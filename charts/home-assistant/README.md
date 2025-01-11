@@ -22,7 +22,7 @@ It is updated **automatically** with each new release of Home Assistant, ensurin
 To deploy Home Assistant using this Helm chart, follow these steps:
 
 ```console
-$ helm repo add pajikos http://dawsmac.github.io/home-assistant-helm-chart/
+$ helm repo add dawsmac http://dawsmac.github.io/home-assistant-helm-chart/
 $ helm repo update
 $ helm install home-assistant dawsmac/home-assistant
 ```
